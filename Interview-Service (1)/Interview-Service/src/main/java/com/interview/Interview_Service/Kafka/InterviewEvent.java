@@ -11,5 +11,5 @@ public class InterviewEvent implements Serializable {
     private Long interviewId;
     private String message;
 
-    
+
 }
