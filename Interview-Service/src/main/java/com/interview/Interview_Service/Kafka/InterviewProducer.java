@@ -12,6 +12,10 @@ public class InterviewProducer {
     }
 
     public void sendEvent(InterviewEvent event) {
-        kafkaTemplate.send("interview-topic", event);
+        System.out.println("🔥 Sending event to Kafka");
+        kafkaTemplate.send(
+                "interview-topic",
+                "Interview Scheduled Successfully"
+        );
     }
 }
